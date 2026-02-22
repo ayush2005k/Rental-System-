@@ -1,60 +1,177 @@
-# Java Vehicle Rental System 🚗
+🚗 Java Vehicle Rental Management System
 
-A simple command-line application for renting vehicles, built with Java. This project serves as a basic demonstration of Object-Oriented Programming (OOP) principles and console-based user interaction. It's an ideal project for beginners learning Java.
+A structured, layered Vehicle Rental Management System built using Java.
+This project demonstrates strong Object-Oriented Programming (OOP) principles, layered architecture, business logic separation, and scalable backend design.
 
----
+It evolves from a basic console app into a structured backend-ready system.
 
-## Features
+📌 Features
+Core Functionalities
 
-* Rent a car or a motorcycle.
-* View a collection of available vehicles with their daily rental rates.
-* Select a vehicle from the list.
-* Specify the number of rental days.
-* Calculate and display the total rental cost.
+Rent a car or motorcycle
 
----
+View all available vehicles
 
-## Technologies Used
+Prevent double booking
 
-* **Java**
-  
----
-  
-## Concepts Demonstrated
-This project showcases several fundamental Java concepts:
+Calculate total rental cost with:
 
-Object-Oriented Programming (OOP):
+Discount for long rentals
 
-Abstraction: Using an abstract Vehicle class to define a common template.
+GST calculation
 
-Inheritance: Car and Motorcycle classes extending the base Vehicle class.
+Track rental details
 
-## Sample Usage
+Role-based logical separation (Repository → Service → Model)
 
-Here is an example of a user interacting with the application:
+Advanced Backend Structure
 
-```text
---- Welcome to the Vehicle Rental System! ---
-What would you like to rent? (car/bike): car
+Clean layered architecture
 
-Here is our collection of cars:
-1. Toyota Camry (2022) - ₹3500.00/day
-2. Honda City (2023) - ₹3200.00/day
-3. Mahindra Thar (2023) - ₹5000.00/day
+Business logic separated from data layer
 
-Please select a vehicle by number: 2
-For how many days would you like to rent it? 5
+Scalable project design
 
---- Your Booking Details ---
+Ready for database integration (JDBC / Spring Boot)
+
+🏗 Project Architecture
+RentalSystem/
+│
+├── model/        → Entity classes (Vehicle, Car, Rental, Customer)
+├── repository/   → Data management layer
+├── service/      → Business logic layer
+└── main/         → Application entry point
+Layer Responsibilities
+Layer	Responsibility
+Model	Defines core entities
+Repository	Manages vehicle data
+Service	Handles rental logic
+Main	Handles user interaction
+🛠 Technologies Used
+
+Java
+
+OOP Principles
+
+Java Collections Framework
+
+Console-based I/O
+
+Layered Architecture Design
+
+🧠 Concepts Demonstrated
+🔹 Object-Oriented Programming (OOP)
+Abstraction
+
+Using an abstract Vehicle class to define a common template.
+
+Inheritance
+
+Car and Motorcycle extend the Vehicle class.
+
+Encapsulation
+
+Private fields with public getters to protect data integrity.
+
+Polymorphism
+
+Overriding displayDetails() method in child classes.
+
+🔹 Layered Architecture
+
+Separation of:
+
+Data layer
+
+Business logic
+
+Application entry point
+
+This mimics real-world backend systems.
+
+🔹 Collections Framework
+
+Using ArrayList to manage vehicles dynamically.
+
+🔹 Business Logic Implementation
+
+Discount applied for rentals longer than 7 days
+
+GST calculation included
+
+Rental validation to prevent duplicate bookings
+
+▶ How to Run the Project
+1️⃣ Navigate to Project Root
+cd RentalSystem
+2️⃣ Compile All Files
+
+If using command line:
+
+javac model/*.java repository/*.java service/*.java main/*.java
+3️⃣ Run the Application
+java main.RentalSystem
+💻 Sample Usage
+Welcome to Rental System
+
+1. Car: Toyota Camry | Fuel: Petrol | Doors: 4 | ₹3500/day
+2. Car: Honda City | Fuel: Petrol | Doors: 4 | ₹3200/day
+3. Motorcycle: Royal Enfield Classic 350 | Sidecar: false | ₹1500/day
+
+Select vehicle number: 2
+Enter your name: Ayush
+Enter license number: DL12345
+Enter phone: 9876543210
+Rental days: 5
+
+Customer: Ayush
 Vehicle: Honda City
-Rental Duration: 5 days
-Total Price: ₹16000.00
-Thank you for your booking!
+Days: 5
+Total Cost (incl GST): ₹18880.0
+📈 Future Enhancements
 
-Encapsulation: Using private fields with public getters to protect data.
+MySQL database integration (JDBC)
 
-Basic Java I/O: Reading user input from the console using the Scanner class.
+Authentication system (Admin / Customer)
 
-Collections Framework: Using ArrayList to store and manage the list of vehicles.
+Payment simulation module
 
-Control Flow: Using if-else statements and for loops to manage the application's logic.
+Spring Boot REST API conversion
+
+Frontend integration (React)
+
+Revenue analytics dashboard
+
+JWT authentication
+
+🎯 Learning Outcomes
+
+By building this project, you gain:
+
+Strong understanding of OOP
+
+Practical layered architecture experience
+
+Clean code organization
+
+Backend development fundamentals
+
+Real-world rental workflow modeling
+
+📌 Why This Project Matters
+
+This project is designed not just as a beginner console app,
+but as a foundation for building scalable backend systems.
+
+It can be extended into:
+
+A full Spring Boot backend
+
+A REST API service
+
+A startup-ready rental management system
+
+📎 Author
+
+Ayush Singh
+Aspiring Backend Developer
