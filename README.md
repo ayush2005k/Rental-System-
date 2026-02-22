@@ -28,6 +28,7 @@ RentalSystem/
 ├── repository/  → Data management layer (In-memory storage)
 ├── service/     → Business logic layer (Price calculation, Validation)
 └── main/        → Application entry point (Console UI)
+``` 
 🧠 Concepts Demonstrated
 🔹 Object-Oriented Programming (OOP)
 Abstraction: Used an abstract Vehicle class as a template for all types.
